@@ -12,3 +12,28 @@ body {
     margin: 0;
     display: block;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    background-color: darkblue;
+}
