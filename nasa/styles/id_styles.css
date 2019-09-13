@@ -7,17 +7,24 @@
     background-color: darkgray;
 }
 
-li::before{
-    content: " ";
-    position: absolute;
-    /*left: -1px;*/
-    /*z-index: 1;*/
-    display: block;
-    width: 2px;
-    height: 14px;
-    top: 20%;
-
-    background-color: yellow;
-    color: yellow;
-    box-sizing: border-box;
+#allContent{
+    margin-top:0px;
+    padding-left:0px;
+    padding-right:0px;
 }
+
+
+/*li::before{*/
+/*    content: " ";*/
+/*    position: absolute;*/
+/*    !*left: -1px;*!*/
+/*    !*z-index: 1;*!*/
+/*    display: block;*/
+/*    width: 2px;*/
+/*    height: 14px;*/
+/*    top: 20%;*/
+
+/*    background-color: yellow;*/
+/*    color: yellow;*/
+/*    box-sizing: border-box;*/
+/*}*/

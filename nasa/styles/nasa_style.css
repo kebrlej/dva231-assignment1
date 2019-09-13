@@ -9,8 +9,11 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: whitesmoke;
-    margin: 0;
     display: block;
+    margin:auto;
+    max-width: 1400px;
+    vertical-align: middle;
+    min-height:100%;
 }
 
 ul {
