@@ -17,24 +17,62 @@ body {
     min-height: 100%;
 }
 
-.news {
-    font-size: 13px;
+/* NEWS PANEL with links*/
+.news-panel {
+    background-color: rgb(57, 113, 158);
+    font-size: 14px;
     color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    display: block;
+    position: relative;
 }
 
-.news h4{
+.news-panel h4 {
     border-bottom: 1px solid #fff;
     margin: 0 auto 3px;
     width: 96%;
     padding: 8px 0 6px 0;
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
-    float: left;
+    position: relative;
 }
 
-.newslink{
+.news-panel a {
+    color: white;
+    text-decoration: none;
+}
 
+.news-panel a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.news-link-title {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.news-panel-footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #fff;
+    left: 2%;
+    width: 96%;
+}
+
+.news-left-bottom-link {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.news-right-bottom-link {
+    float: right;
+    width: 50%;
+    text-align: center;
 }
 
 .logo {
@@ -63,63 +101,44 @@ li a {
     text-decoration: none;
 }
 
-a {
-    color: whitesmoke;
-}
-
 a:hover {
     background-color: darkblue;
 }
-.content-wrapper
-{
+
+.content-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(300px, auto);
-
-
 }
-.one
-{
+
+.one {
     grid-column: 1 /span 4;
     grid-row: 1;
     background-color: red;
-    background-image: "/nasa/img/flat-earth-society-banner.png";
 
 }
-img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height:  100%;
-    width: auto;
-}
-.two
-{
-    background-color: violet;
-}
-.three
-{
-    background-color: violet;
-}
-.four
-{
+
+.three {
     grid-column: 3/5;
     grid-row: 2;
     background-color: green;
 }
-.five
-{
+
+.four {
     background-color: violet;
 }
-.six
-{
+
+.five {
+    background-color: violet;
+}
+
+.six {
     grid-column: 2/4;
     grid-row: 3;
     background-color: white;
 }
-.seven
-{
+
+.seven {
     background-color: violet;
 }
