@@ -4,16 +4,22 @@ html {
 }
 
 body {
+    margin-top: 10px;
     background: black;
     font-family: "Titillium Web", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: whitesmoke;
     display: block;
-    margin:auto;
+    margin: auto;
     max-width: 1400px;
     vertical-align: middle;
-    min-height:100%;
+    min-height: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
 }
 
 ul {

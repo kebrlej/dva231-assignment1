@@ -1,29 +1,52 @@
+#upper-navbar {
+    text-align: center;
+    margin:0 auto;
+    display:inline-block;
+}
+
+#upper-navbar li {
+    display: inline-block;
+}
+
+#upper-navbar a {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+#upper-navbar a:hover {
+    background-color: mediumblue;
+}
 
 #lower-navbar {
     text-align: center;
 }
 
-#lower-navbar li{
+#lower-navbar li {
     display: inline-block;
-    position: relative;
+    /*position: relative;*/
 }
 
 #lower-navbar a {
-	text-align: center;
+    text-align: center;
     background-color: #555555;
     padding: 10px 15px;
 }
-#lower-navbar a:hover {
 
+#lower-navbar a:hover {
     background-color: darkgray;
 }
 
-#allContent{
-    margin-top:0px;
-    padding-left:0px;
-    padding-right:0px;
+#allContent {
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
+#search-form{
+    float:right;
+    position: relative;
+}
 
 /*li::before{*/
 /*    content: " ";*/
