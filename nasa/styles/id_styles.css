@@ -1,7 +1,11 @@
+#menu-wrapper {
+    margin-bottom: 25px;
+}
+
 #upper-navbar {
     text-align: center;
-    margin:0 auto;
-    display:inline-block;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 #upper-navbar li {
@@ -43,8 +47,8 @@
     padding-right: 0px;
 }
 
-#search-form{
-    float:right;
+#search-form {
+    float: right;
     position: relative;
 }
 

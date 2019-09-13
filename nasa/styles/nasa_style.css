@@ -17,9 +17,36 @@ body {
     min-height: 100%;
 }
 
+.news {
+    font-size: 13px;
+    color: white;
+}
+
+.news h4{
+    border-bottom: 1px solid #fff;
+    margin: 0 auto 3px;
+    width: 96%;
+    padding: 8px 0 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    float: left;
+}
+
+.newslink{
+
+}
+
 .logo {
     float: left;
     padding: 10px;
+}
+
+.cube {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    background-color: #428bca;
 }
 
 ul {
