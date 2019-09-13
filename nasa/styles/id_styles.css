@@ -1,9 +1,11 @@
 #lower-navbar a {
+	text-align: center;
     background-color: #555555;
     padding: 10px 15px;
 }
 
 #lower-navbar a:hover {
+
     background-color: darkgray;
 }
 
