@@ -17,6 +17,10 @@ body {
     min-height: 100%;
 }
 
+a {
+    color: white;
+}
+
 /* NEWS PANEL with links*/
 .news-panel {
     background-color: rgb(57, 113, 158);
