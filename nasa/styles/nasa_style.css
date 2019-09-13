@@ -122,16 +122,16 @@ a:hover {
     background-color: red;
 
 }
-
 .three {
+    background-color: violet;
+}
+.four {
     grid-column: 3/5;
     grid-row: 2;
     background-color: green;
 }
 
-.four {
-    background-color: violet;
-}
+
 
 .five {
     background-color: violet;
@@ -145,4 +145,12 @@ a:hover {
 
 .seven {
     background-color: violet;
+}
+img
+{
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
