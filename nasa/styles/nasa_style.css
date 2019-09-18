@@ -19,16 +19,21 @@ body {
 a {
     color: white;
 }
-.search-button
+label
 {
-    position: relative;
-    float: right;
+    float : right;
     max-height: 22px;
+}
+img.search-button
+{
+    max-height: 22px;
+    max-width: 22px;
 }
 input.query
 {
-    background-color: rgba(255,255,255,0.2);
+    background-color: transparent;
     padding: 0px;
+    border: none;
 }
 
 /* NEWS PANEL with links*/
