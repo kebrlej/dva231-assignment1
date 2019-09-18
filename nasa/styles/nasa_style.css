@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    margin-top: 10px;
     background: black;
     font-family: "Titillium Web", sans-serif;
     font-size: 14px;
@@ -52,7 +51,7 @@ a {
     background-color: transparent;
 }
 
-.news-link-title {
+.news-panel-link-title {
     font-size: 14px;
     line-height: 16px;
     display: block;
@@ -82,16 +81,6 @@ a {
 .logo {
     float: left;
     padding: 10px;
-}
-
-.panel-title {
-    font-size: 14px;
-    background-color: mintcream;
-    opacity: 75%;
-    color: black;
-    width: 100%;
-    position: absolute;
-    border-bottom: 0;
 }
 
 ul {
