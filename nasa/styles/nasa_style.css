@@ -124,6 +124,25 @@ a:hover {
     grid-column: 3/5;
     grid-row: 2;
     background-color: green;
+   
+}
+.four-left
+{
+   width: 50%;
+   height: 100%;
+   float: left;
+}
+.four-right
+{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: white;
+    color: black;
+}
+h1
+{
+    color: #428bca;
 }
 
 .five {
@@ -147,6 +166,10 @@ a:hover {
 
 .seven.news-panel {
     padding: 0px;
+}
+iframe
+{
+    max-width: 100%;
 }
 
 img {
