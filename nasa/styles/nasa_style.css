@@ -120,20 +120,32 @@ a:hover {
     height: 100%;
 }
 
-.image-panel-href:hover {
-    background-color: transparent;
-    opacity: 1.0;
-}
-
-.image-panel-text {
+.image-panel-text-wrapper {
     position: absolute;
     bottom: 0px;
     left: 0;
+    font-weight: bold;
 }
 
 .image-panel-tag {
-    position: absolute;
-    bottom: 0px;
+    display: inline-block;
+    /*margin: 16px;*/
+    padding: 6px 12px;
+
+
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #fff;
+    background: #5d7fb9;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.image-panel-tag:hover{
+    background: #5d7fb9;
+    text-decoration: none;
+    opacity: 1.0;
 }
 
 .image-panel-title {
@@ -145,7 +157,6 @@ a:hover {
     opacity: 0.8;
 
     font-size: 19px;
-    font-weight: bold;
     line-height: 23px;
     padding: 6px 12px;
 }
@@ -154,15 +165,10 @@ a:hover {
     opacity: 1.0;
 }
 
-.image-panel-title a:hover {
-    opacity: 100%;
-}
-
 .one {
     grid-column: 1 /span 4;
     grid-row: 1;
     background-color: red;
-
 }
 
 .three {
