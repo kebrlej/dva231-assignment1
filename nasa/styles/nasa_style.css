@@ -109,6 +109,55 @@ a:hover {
     grid-auto-rows: 300px;
 }
 
+.panel {
+    position: relative;
+}
+
+/*** IMAGE PANEL HREF ***/
+.image-panel-href {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.image-panel-href:hover {
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+.image-panel-text {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.image-panel-tag {
+    position: absolute;
+    bottom: 0px;
+}
+
+.image-panel-title {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: black;
+    background: white;
+    opacity: 0.8;
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23px;
+    padding: 6px 12px;
+}
+
+.image-panel-title:hover {
+    opacity: 1.0;
+}
+
+.image-panel-title a:hover {
+    opacity: 100%;
+}
+
 .one {
     grid-column: 1 /span 4;
     grid-row: 1;
