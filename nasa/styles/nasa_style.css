@@ -6,7 +6,6 @@ html {
 body {
     margin-top: 10px;
     background: black;
-    background-image: url("/img/starfield-banner.jpg");
     font-family: "Titillium Web", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -118,7 +117,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: 300px;
 }
 
 .one {
@@ -148,6 +147,12 @@ a:hover {
 
 .seven {
     background-color: violet;
+}
+.twitter-timeline
+{
+    max-height: 100%;
+    width: auto;
+    display: block;
 }
 img
 {
