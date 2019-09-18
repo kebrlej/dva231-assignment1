@@ -120,11 +120,23 @@ a:hover {
     height: 100%;
 }
 
+
 .image-panel-text-wrapper {
+    font-weight: bold;
+}
+
+.main-image-panel-text-wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 32px;
+}
+
+.small-image-panel-text-wrapper {
     position: absolute;
     bottom: 0px;
     left: 0;
-    font-weight: bold;
+    font-size: 19px;
 }
 
 .image-panel-tag {
@@ -133,8 +145,8 @@ a:hover {
     padding: 6px 12px;
 
 
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 0.95em;
+    line-height: 1.03em;
 
     color: #fff;
     background: #5d7fb9;
@@ -142,7 +154,7 @@ a:hover {
     text-decoration: none;
 }
 
-.image-panel-tag:hover{
+.image-panel-tag:hover {
     background: #5d7fb9;
     text-decoration: none;
     opacity: 1.0;
@@ -156,8 +168,8 @@ a:hover {
     background: white;
     opacity: 0.8;
 
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 1em;
+    line-height: 1.05em;
     padding: 6px 12px;
 }
 
@@ -178,25 +190,25 @@ a:hover {
 .four {
     grid-column: 3/5;
     grid-row: 2;
-    background-color: green;
-   
+    /*background-color: green;*/
+
 }
-.four-left
-{
-   width: 50%;
-   height: 100%;
-   float: left;
+
+.four-left {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
-.four-right
-{
+
+.four-right {
     width: 50%;
     height: 100%;
     float: right;
     background-color: white;
     color: black;
 }
-h1
-{
+
+h1 {
     color: #428bca;
 }
 
@@ -208,7 +220,7 @@ h1
     grid-column: 2/4;
     grid-row: 3;
     background-color: white;
-    
+
 }
 
 .seven {
@@ -223,8 +235,8 @@ h1
 .seven.news-panel {
     padding: 0px;
 }
-iframe
-{
+
+iframe {
     max-width: 100%;
 }
 

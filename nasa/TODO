@@ -1,16 +1,18 @@
 *** GENERAL ***
 Fix font to match NASA (check)
-Twitter
-Video player
-
+Twitter (check)
+Video player (check)
 
 *** MENU ***
 Menu background start image (check)
-Menu items separation with thin horizontal lines
 Search form icons and styling
-Fix paddings and margins to look more like NASA page
 
-*** JavaScript ***
-Video
+*** PART2 ***
+Video (check)
 Picture switching
 Text displayed on hover
+
+*** FINISHING TOUCHES ***
+Make image panel titles clickable
+Menu items separation with thin horizontal lines
+Fix paddings and margins to look more like NASA page
