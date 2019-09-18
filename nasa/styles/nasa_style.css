@@ -190,20 +190,32 @@ a:hover {
 }
 
 .three {
-    background-color: violet;
-}
+     background-color: violet;
+ }
 
 .four {
     grid-column: 3/5;
     grid-row: 2;
-    /*background-color: green;*/
-
 }
 
 .four-left {
     width: 50%;
     height: 100%;
     float: left;
+    box-sizing: border-box;
+}
+
+.four-left::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-right-color: #fff;
+    border-left: none;
+    position: absolute;
+    right: -2px;
+    top: 40%;
+    box-sizing: border-box;
 }
 
 .four-right {
@@ -212,6 +224,10 @@ a:hover {
     float: right;
     background-color: white;
     color: black;
+}
+
+.four-right-content{
+    padding: 0px 20px;
 }
 
 h1 {
