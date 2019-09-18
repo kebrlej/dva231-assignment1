@@ -115,9 +115,11 @@ a:hover {
     background-color: red;
 
 }
+
 .three {
     background-color: violet;
 }
+
 .four {
     grid-column: 3/5;
     grid-row: 2;
@@ -135,22 +137,21 @@ a:hover {
 }
 
 .seven {
-    
-background-color: transparent;
+
+    background-color: transparent;
 }
-.twitter-timeline
-{
+
+.twitter-timeline {
     max-width: 100%;
 }
-.seven.news-panel
-{
+
+.seven.news-panel {
     padding: 0px;
 }
-img
-{
-    max-height: 100%;
-    width: auto;
+
+img {
+    height: 100%;
+    width: 100%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    overflow: hidden;
 }
