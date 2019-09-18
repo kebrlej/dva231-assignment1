@@ -135,13 +135,16 @@ a:hover {
 }
 
 .seven {
-    background-color: violet;
+    
+background-color: transparent;
 }
 .twitter-timeline
 {
-    max-height: 100%;
-    width: auto;
-    display: block;
+    max-width: 100%;
+}
+.seven.news-panel
+{
+    padding: 0px;
 }
 img
 {
