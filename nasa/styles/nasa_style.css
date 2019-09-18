@@ -25,6 +25,11 @@ a {
     float: right;
     max-height: 22px;
 }
+input.query
+{
+    background-color: rgba(255,255,255,0.2);
+    padding: 0px;
+}
 
 /* NEWS PANEL with links*/
 .news-panel {
