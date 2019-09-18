@@ -6,6 +6,7 @@ html {
 body {
     margin-top: 10px;
     background: black;
+    background-image: url("/img/starfield-banner.jpg");
     font-family: "Titillium Web", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
