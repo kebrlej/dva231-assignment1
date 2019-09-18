@@ -1,6 +1,6 @@
 #menu-wrapper {
     margin-bottom: 25px;
-    background-image: url("/img/starfield-banner.jpg"); /*attempt of background*/
+    background-image: url("../img/starfield-banner.jpg"); /*attempt of background*/
 }
 
 #upper-navbar {
