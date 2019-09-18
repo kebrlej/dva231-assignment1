@@ -19,6 +19,12 @@ body {
 a {
     color: white;
 }
+.search-button
+{
+    position: relative;
+    float: right;
+    max-height: 22px;
+}
 
 /* NEWS PANEL with links*/
 .news-panel {
