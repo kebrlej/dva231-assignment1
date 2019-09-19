@@ -28,7 +28,7 @@ function onMouseLeave(){
 }
 
 var changeImage = function changeImage() {
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         if (nextImageNumber % 3 === i) {
             newsPanels[i].style.display = "";
         } else {
