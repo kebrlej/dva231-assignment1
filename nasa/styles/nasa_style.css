@@ -19,18 +19,18 @@ body {
 a {
     color: white;
 }
-label
-{
-    float : right;
+
+label {
+    float: right;
     max-height: 22px;
 }
-img.search-button
-{
+
+img.search-button {
     max-height: 22px;
     max-width: 22px;
 }
-input.query
-{
+
+input.query {
     background-color: transparent;
     padding: 0px;
     border: none;
@@ -196,12 +196,13 @@ a:hover {
 .one {
     grid-column: 1 /span 4;
     grid-row: 1;
-    background-color: red;
+    display: block;
+    overflow: hidden;
 }
 
 .three {
-     background-color: violet;
- }
+    background-color: violet;
+}
 
 .four {
     grid-column: 3/5;
@@ -215,7 +216,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-.four-left::after{
+.four-left::after {
     content: "";
     width: 0;
     height: 0;
@@ -236,7 +237,7 @@ a:hover {
     color: black;
 }
 
-.four-right-content{
+.four-right-content {
     padding: 0px 20px;
 }
 
@@ -252,7 +253,6 @@ h1 {
     grid-column: 2/4;
     grid-row: 3;
     background-color: white;
-
 }
 
 .seven {
@@ -275,6 +275,6 @@ iframe {
 img {
     height: 100%;
     width: 100%;
-    display: block;
-    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
 }

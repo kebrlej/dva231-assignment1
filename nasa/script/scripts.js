@@ -1,22 +1,29 @@
-var nextImageNumber = 0;
+var nextImageNumber = 1;
+var newsPanels = {};
+
+window.onload = function () {
+    for (var i = 0; i < 3; i++) {
+        var newsId = "main-news" + i;
+        var newsPanel = document.getElementById(newsId);
+        newsPanels[i] = newsPanel;
+    }
+    var panel = newsPanel.get;
+    newsPanels[0].style.display = "none";
+    newsPanels[1].style.display = "";
+    newsPanels[2].style.display = "none";
+    window.setInterval(changeImage, 4000);
+};
 
 var changeImage = function changeImage() {
-    var img = document.getElementById("main-image");
-
-    switch (nextImageNumber % 3) {
-        case 0:
-            img.src = "img/flat-earth-society-banner.png";
-            break;
-        case 1:
-            img.src = "img/flat-disk-earth.jpg";
-            break;
-        case 2:
-            img.src = "img/flat-earth-disk.jpg";
-            break;
+    for (var i = 0; i < 3; i++) {
+        if (nextImageNumber % 3 === i) {
+            newsPanels[i].style.display = "";
+        } else {
+            newsPanels[i].style.display = "none";
+        }
     }
     nextImageNumber++;
 };
 
-window.setInterval(changeImage, 4000);
 
 
