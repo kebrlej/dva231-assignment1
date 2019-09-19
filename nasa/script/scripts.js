@@ -12,7 +12,20 @@ window.onload = function () {
     newsPanels[1].style.display = "";
     newsPanels[2].style.display = "none";
     window.setInterval(changeImage, 4000);
+
+
 };
+
+function onMouseOver() {
+    var x = 10;
+    document.getElementById("image-panel-hover-description")
+        .style.display="";
+}
+
+function onMouseLeave(){
+    document.getElementById("image-panel-hover-description")
+        .style.display="none";
+}
 
 var changeImage = function changeImage() {
     for (var i = 0; i < 3; i++) {
@@ -24,6 +37,7 @@ var changeImage = function changeImage() {
     }
     nextImageNumber++;
 };
+
 
 
 
