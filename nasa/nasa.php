@@ -1,3 +1,7 @@
+<?php
+require("../src/file_reader.php");
+$news = get_json();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,12 +139,10 @@
 
             <div class="panel three">
                 <a class="image-panel-href" href="/">
-                    <img src="<?php echo $news['news'][1]['imgurl'];?>">
+                    <img src="
+                    <?php echo $news['news'][1]['imgurl'];
+                    ?>">
                     <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
-                        <?php
-                        require("../src/file_reader.php");
-                        $news = get_json();
-                        ?>
                         <a class="image-panel-tag" href="/"><?php echo $news['news'][1]['title']; ?></a>
 
                         <a href="/">
