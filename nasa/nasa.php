@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
 require("../src/file_reader.php");
 $news = get_json();
 ?>
