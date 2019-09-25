@@ -194,4 +194,9 @@ $news = get_json();
     </div>
 </div>
 </body>
+<footer>
+    <div class="admin_login">
+        <a class ="login-button" href=""></a>
+    </div>
+</footer>
 </html>
