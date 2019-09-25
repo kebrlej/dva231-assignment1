@@ -135,7 +135,7 @@
 
             <div class="panel three">
                 <a class="image-panel-href" href="/">
-                    <img src="img/area-51.jpg">
+                    <img src="<?php echo $news['news'][1]['imgurl'];?>">
                     <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
                         <?php
                         require("../src/file_reader.php");
