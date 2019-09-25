@@ -119,6 +119,7 @@ $news = get_json();
             <div class="news-panel">
                 <h4>NASA Events</h4>
                 <div>
+                    
                     <div class="news-link-title">
                         <a href="">Wed., Sept. 25, 9:57 a.m. EDT: Expedition 61 Crew Launch to Space Station (NASA TV
                             Begins 9 a.m.)</a>
@@ -167,13 +168,14 @@ $news = get_json();
 
             <div class="four panel">
                 <div class="four-left panel">
-                    <img src="img/new-mars-rover.PNG">
+                    <img src="<?php echo $news['news'][2]['imgurl'];?>">
                 </div>
                 <div class="four-right">
                     <div class="four-right-content">
-                        <h1>NASA Invites Students to Name Next Mars Rover</h1>
-                        <p>Red rover, red rover, send a name for Mars 2020 right over! NASA is recruiting help from
-                            students nationwide to find a name for its next Mars rover mission.
+                        <h1>NASA <?php echo $news['news'][2]['title']; ?></h1>
+                        <p><!-- Red rover, red rover, send a name for Mars 2020 right over! NASA is recruiting help from
+                            students nationwide to find a name for its next Mars rover mission.-->
+                            <?php echo $news['news'][2]['content']; ?>
                         </p>
                     </div>
                 </div>
