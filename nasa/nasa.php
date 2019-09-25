@@ -137,7 +137,11 @@
                 <a class="image-panel-href" href="/">
                     <img src="img/area-51.jpg">
                     <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
-                        <a class="image-panel-tag" href="/">Hello world!!!</a>
+                        <?php
+                        require("../src/file_reader.php");
+                        $news = get_json();
+                        ?>
+                        <a class="image-panel-tag" href="/"><?php echo $news['news'][1]['title']; ?></a>
 
                         <a href="/">
                             <div class="image-panel-hover" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()">
