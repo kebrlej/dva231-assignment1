@@ -328,4 +328,15 @@ img {
 .dropdown:hover {
     background-color: darkblue;
 }
-
+.login-button
+{
+    position : relative;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    margin: auto;
+    
+}
