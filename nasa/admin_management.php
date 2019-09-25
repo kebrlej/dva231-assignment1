@@ -16,11 +16,12 @@ require('../src/session_check.php');
 
 ?>  !!!!!</h2>
 <!-- TODO display radio buttons with possible files -->
+<?php
+// load news_files contents and generate radio buttons, create submit
+?>
 
-<form action="../src/login_check.php" method="post">
-    <input type="text" name=""><br>
-    Password: <input type="password" name="password"><br>
-    <input type="submit">
+<form action="../src/logout.php" method="post">
+    <input type="submit" value="Logout!">
 </form>
 
 </body>
