@@ -1,0 +1,19 @@
+{
+  "news":[
+    {
+      "title":"Florida man arrested at Kennedy Space Center, said he wanted to light cigarette with rocket engine ",
+      "imgurl":"https://www.lafloride.com/images/kennedy-space-center-01.jpg",
+      "content":"At 4 pm, a 27yo man, known from the authorities for detention of drugs, got arrested with a joint of 100g of cannabis."
+    },
+    {
+      "title":"Hubble satellite delivers astonishing map of Jupiter",
+      "imgurl":"https://hubblesite.org/uploads/image/display_image/4561/STSCI-H-p1936b-d-1280x720.png",
+      "content":"As reliable as it is for nearly 30 years, Hubble satellite, on its duty of making us see the Solar System, delivers us a whole 360° map of our largest neighbour."
+    },
+    {
+      "title":"NASA Research Gives New Insight into How Much Atmosphere Mars Lost",
+      "imgurl":"https://www.nasa.gov/sites/default/files/thumbnails/image/mars_landscape_dry_wet_0.png",
+      "content":"A key tracer used to estimate how much atmosphere Mars lost can change depending on the time of day and the surface temperature on the Red Planet, according to new observations by NASA-funded scientists."
+    }
+  ]
+}
