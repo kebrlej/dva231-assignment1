@@ -117,6 +117,24 @@ $news = get_json();
             </div>
 
             <div class="news-panel">
+                <img src=" <?php echo $news['news'][0]['imgurl'] ?>">
+                <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
+                    <a class="image-panel-tag" href="/"><?php echo $news['news'][0]['title']; ?></a>
+
+                    <a href="/">
+                        <div class="image-panel-hover" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()">
+                            <div class="image-panel-title">
+                                Pad 39B Water Flow Test Comes Through Loud and Clear
+                            </div>
+                            <div id="image-panel-hover-description" style="display: none">
+                                <?php
+                                echo $news['news'][0]['content'];
+                                ?>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--
                 <h4>NASA Events</h4>
                 <div>
                     
@@ -139,6 +157,7 @@ $news = get_json();
                     <a class="news-left-bottom-link" href="">Calendar</a>
                     <a class="news-right-bottom-link" href="">Launches and Landings</a>
                 </div>
+                -->
             </div>
 
             <div class="panel three">
@@ -172,7 +191,7 @@ $news = get_json();
                 </div>
                 <div class="four-right">
                     <div class="four-right-content">
-                        <h1>NASA <?php echo $news['news'][2]['title']; ?></h1>
+                        <h1><?php echo $news['news'][2]['title']; ?></h1>
                         <p><!-- Red rover, red rover, send a name for Mars 2020 right over! NASA is recruiting help from
                             students nationwide to find a name for its next Mars rover mission.-->
                             <?php echo $news['news'][2]['content']; ?>

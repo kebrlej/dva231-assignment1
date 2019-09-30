@@ -39,11 +39,10 @@ input.query {
 
 /* NEWS PANEL with links*/
 .news-panel {
-    background-color: rgb(57, 113, 158);
+
     font-size: 14px;
     color: white;
     box-sizing: border-box;
-    padding: 5px;
     display: block;
     position: relative;
 }
@@ -212,6 +211,7 @@ a:hover {
 }
 
 .one {
+    background-color: transparent;
     grid-column: 1 /span 4;
     grid-row: 1;
     display: block;
