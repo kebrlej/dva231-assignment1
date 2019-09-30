@@ -1,14 +1,17 @@
 <?php
-require_once "Globals.php";
+session_start();
 
-function get_json()
+function get_news_file_as_object()
 {
-    $file = file_get_contents('../news_files/'.Globals::$news_file);
-    $news_text = json_decode($file, true);
-    return $news_text;
+    if (isset($_SESSION['news_file_name'])) {
+    } else {
+        $_SESSION['news_file_name'] = "Ass2News.json";
+    }
+
+    return json_decode(file_get_contents('../news_files/' . $_SESSION['news_file_name']), true);
 }
 
-function get_file_names()
+function get_available_news_files()
 {
     $files = scandir('../news_files');
     unset($files[0]);

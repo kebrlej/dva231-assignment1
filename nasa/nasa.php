@@ -1,15 +1,13 @@
 <?php
 session_start();
-
-require_once("../src/Globals.php");
-require_once("../src/file_reader.php");
-$news = get_json();
+require("../src/file_reader.php");
+$news = get_news_file_as_object();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo Globals::$news_file; ?></title>
+    <title>NASA</title>
     <link rel="stylesheet" type="text/css" href="styles/nasa_style.css">
     <link rel="stylesheet" type="text/css" href="styles/id_styles.css">
     <link rel="icon" type="image/png" href="img/nasa-logo.png"/>
@@ -31,7 +29,7 @@ $news = get_json();
 
 
                 <li class="dropbtn dropdown">
-                    <a href=""><?php echo Globals::$news_file; ?></a>
+                    <a href="">Missions</a>
                     <div class="dropdown-content">
                         <a href="#">International Space station</a>
                         <a href="#">Hubble space telescope</a>

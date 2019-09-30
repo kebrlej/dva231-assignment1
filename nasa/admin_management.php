@@ -18,7 +18,7 @@ require("../src/file_reader.php");
 
 <form action="../src/change_news_file.php" method="post">
     <?php
-    foreach (get_file_names() as $filename) {
+    foreach (get_available_news_files() as $filename) {
         echo "<input type='radio' name='newsfile' value='"
             . $filename
             . "'>";
