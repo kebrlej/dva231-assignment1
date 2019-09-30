@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (isset($_SESSION['user_id'])) {
+    // user is already logged in, redirect to management page
+    header('Location: ../nasa/admin_management.php');
+}
 ?>
 
 <!DOCTYPE html>

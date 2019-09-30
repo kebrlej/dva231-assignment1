@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if (isset($_POST['newsfile'])) {
     $_SESSION['news_file_name'] = $_POST['newsfile'];
     echo  $_SESSION['news_file_name'];

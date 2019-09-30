@@ -1,7 +1,9 @@
 <?php
+session_start();
 //check credentials, if not correct, redirect the user
 require('../src/session_check.php');
 require("../src/file_reader.php");
+
 ?>
 
 <!DOCTYPE html>

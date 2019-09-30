@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 function get_news_file_as_object()
 {
