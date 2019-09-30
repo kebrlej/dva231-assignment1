@@ -1,0 +1,29 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+body
+{
+
+    width: 40em;
+    margin: 0 auto;
+    background-color: black;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+}
+h1
+{
+
+    background-color: #428bca;
+}
+.login-button
+{
+    /*display: block;*/
+    height: 40px;
+    width: auto;
+    color: #428bca;
+    width: 10em;
+}

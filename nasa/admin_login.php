@@ -11,6 +11,8 @@ if (isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Admin login</title>
+    <link rel="stylesheet" type="text/css" href="styles/login_style.css">
+    <link rel="icon" type="image/png" href="img/nasa-logo.png"/>
 </head>
 <body>
 <h1> If you are admin please login</h1>
@@ -19,7 +21,7 @@ if (isset($_SESSION['user_id'])) {
 <form action="../src/login_check.php" method="post">
     Username: <input type="text" name="login"><br>
     Password: <input type="password" name="password"><br>
-    <input type="submit" value="Login!">
+    <input class ="login-button"type="submit" value="Login!">
 </form>
 
 
