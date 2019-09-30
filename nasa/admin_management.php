@@ -16,7 +16,7 @@ require("../src/file_reader.php");
 <h2>Welcome back <?php echo "" . $_SESSION['user_id']; ?> !!!!!</h2>
 <!-- TODO display radio buttons with possible files -->
 
-<form>
+<form action="../src/change_news_file.php" method="post">
     <?php
     foreach (get_file_names() as $filename) {
         echo "<input type='radio' name='newsfile' value='"

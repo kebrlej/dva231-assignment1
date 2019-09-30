@@ -1,8 +1,9 @@
 <?php
+require_once "Globals.php";
 
 function get_json()
 {
-    $file = file_get_contents('../news_files/Ass2News.json');
+    $file = file_get_contents('../news_files/'.Globals::$news_file);
     $news_text = json_decode($file, true);
     return $news_text;
 }
