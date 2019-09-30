@@ -2,5 +2,5 @@
 
 class Globals
 {
-    public static $news_file = 'Ass2News.json';
+    public static $news_file = 'another_news.json';
 }
