@@ -11,6 +11,8 @@ require("../src/file_reader.php");
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/admin_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/nasa-logo.png"/>
     <title>Admin login</title>
 </head>
 <body>
