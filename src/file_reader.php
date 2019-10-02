@@ -1,5 +1,9 @@
 <?php
 
+function read_news_file_by_name($filename){
+    return json_decode(file_get_contents('../news_files/' . $filename), true);
+}
+
 function get_news_file_as_object()
 {
     if (!isset($_SESSION['news_file_name'])) {
