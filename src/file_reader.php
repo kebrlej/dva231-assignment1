@@ -2,8 +2,7 @@
 
 function get_news_file_as_object()
 {
-    if (isset($_SESSION['news_file_name'])) {
-    } else {
+    if (!isset($_SESSION['news_file_name'])) {
         $_SESSION['news_file_name'] = "Ass2News.json";
     }
 
