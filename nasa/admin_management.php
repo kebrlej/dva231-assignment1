@@ -10,6 +10,7 @@ require("../src/file_reader.php");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/admin_style.css">
     <title>Admin login</title>
 </head>
 <body>
