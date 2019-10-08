@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../src/file_reader.php");
+require("../php/file_reader.php");
 $news = get_news_file_as_object();
 ?>
 <!DOCTYPE html>
@@ -8,11 +8,11 @@ $news = get_news_file_as_object();
 <head>
     <meta charset="UTF-8">
     <title>NASA</title>
-    <link rel="stylesheet" type="text/css" href="styles/nasa_style.css">
-    <link rel="stylesheet" type="text/css" href="styles/id_styles.css">
-    <link rel="icon" type="image/png" href="img/nasa-logo.png"/>
+    <link rel="stylesheet" type="text/css" href="../styles/nasa_style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/id_styles.css">
+    <link rel="icon" type="image/png" href="../img/nasa-logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <script src="script/scripts.js"></script>
+    <script src="../script/scripts.js"></script>
 </head>
 <body>
 
@@ -21,7 +21,7 @@ $news = get_news_file_as_object();
     <!--    Top -->
     <div id="menu-wrapper">
         <a class="logo" href="/">
-            <img src="img/nasa-logo.svg" alt="">
+            <img src="../img/nasa-logo.svg" alt="">
         </a>
         <!--	upper navbar -->
         <div id="upper-navbar-row">
@@ -48,7 +48,7 @@ $news = get_news_file_as_object();
 
             </ul>
             <a href="/">
-                <img id="share-image" src="img/share.svg">
+                <img id="share-image" src="../img/share.svg">
             </a>
             <div id="search-form">
                 <form id="search-bar">
@@ -81,7 +81,7 @@ $news = get_news_file_as_object();
             <div class="panel one">
                 <div id="main-news0">
                     <a class="image-panel-href" href="/">
-                        <img src="img/flat-earth-society-banner.png">
+                        <img src="../img/flat-earth-society-banner.png">
                         <div class="image-panel-text-wrapper main-image-panel-text-wrapper">
                             <a class="image-panel-tag" href="/">Conspiracy</a>
                             <div class="image-panel-title">
@@ -92,7 +92,7 @@ $news = get_news_file_as_object();
                 </div>
                 <div id="main-news1" style="display: none">
                     <a class="image-panel-href" href="/">
-                        <img src="img/apollo-landing-panorama.jpg">
+                        <img src="../img/apollo-landing-panorama.jpg">
                         <div class="image-panel-text-wrapper main-image-panel-text-wrapper">
                             <a class="image-panel-tag" href="/">Moon NEWS</a>
                             <div class="image-panel-title">
@@ -103,7 +103,7 @@ $news = get_news_file_as_object();
                 </div>
                 <div id="main-news2" style="display: none">
                     <a class="image-panel-href" href="/">
-                        <img src="img/opportunity-parting-shot.jpg">
+                        <img src="../img/opportunity-parting-shot.jpg">
                         <div class="image-panel-text-wrapper main-image-panel-text-wrapper">
                             <a class="image-panel-tag" href="/">Mars expedition</a>
                             <div class="image-panel-title">
@@ -204,7 +204,7 @@ $news = get_news_file_as_object();
 
             </div>
             <div class="six">
-                <img src="img/spacefox.jpg">
+                <img src="../img/spacefox.jpg">
             </div>
             <div class="seven">
                 <a class="twitter-timeline" data-width="343" data-height="300" data-theme="dark"

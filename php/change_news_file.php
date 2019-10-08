@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['newsfile'])) {
     $_SESSION['news_file_name'] = $_POST['newsfile'];
-    header('Location: ../nasa/nasa.php');
+    header('Location: ../html/nasa.php');
 } else {
-    header('Location: ../nasa/admin_management.php');
+    header('Location: ../html/admin_management.php');
 }

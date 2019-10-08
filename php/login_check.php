@@ -6,8 +6,8 @@ session_start();
     $_SESSION['timeout'] = time();
     $_SESSION['username'] = $_POST['login'];
     $_SESSION['user_id'] = $_POST['password'];
-    header('Location: ../nasa/admin_management.php');
+    header('Location: ../html/admin_management.php');
 } else {
-    header('Location: ../nasa/admin_login.php');
+    header('Location: ../html/admin_login.php');
 }
 
