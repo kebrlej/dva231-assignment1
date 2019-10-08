@@ -18,7 +18,7 @@ require("../php/file_reader.php");
 <body>
 <h1> Please select which news source you want to use:</h1>
 
-<h2>Welcome back <?php echo "" . $_SESSION['user_id']; ?> !!!!!</h2>
+<h2>Welcome back <?php echo "" . $_SESSION['username']; ?> !!!!!</h2>
 <!-- TODO display radio buttons with possible files -->
 
 <form action="../php/change_news_file.php" method="post">

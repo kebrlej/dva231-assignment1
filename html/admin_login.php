@@ -22,8 +22,15 @@ if (isset($_SESSION['user_id'])) {
 <form action="../php/login_check.php" method="post">
     Username: <input type="text" name="login"><br>
     Password: <input type="password" name="password"><br>
-    <input class ="login-button"type="submit" value="Login!">
+    <input class="login-button" type="submit" value="Login!">
 </form>
+<div class="invalid-login">
+    <?php
+    if (isset($_SESSION['login-error']) && ($_SESSION['login-error'])) {
+        echo "Invalid username of password";
+    }
+    ?>
+</div>
 
 
 </body>
