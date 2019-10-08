@@ -1,7 +1,9 @@
 <?php
 session_start();
 require("../php/file_reader.php");
-$news = get_news_file_as_object();
+require("../php/database_article_provider.php");
+//$news = get_news_file_as_object()['news'];
+$news = get_three_newest_articles();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,9 +117,9 @@ $news = get_news_file_as_object();
             </div>
 
             <div class="news-panel">
-                <img src=" <?php echo $news['news'][0]['imgurl'] ?>">
+                <img src=" <?php echo $news[0]['imgurl'] ?>">
                 <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
-                    <a class="image-panel-tag" href="/"><?php echo $news['news'][0]['title']; ?></a>
+                    <a class="image-panel-tag" href="/"><?php echo $news[0]['title']; ?></a>
 
                     <a href="/">
                         <div class="image-panel-hover" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()">
@@ -126,7 +128,7 @@ $news = get_news_file_as_object();
                             </div>
                             <div id="image-panel-hover-description" style="display: none">
                                 <?php
-                                echo $news['news'][0]['content'];
+                                echo $news[0]['content'];
                                 ?>
                             </div>
                         </div>
@@ -161,10 +163,10 @@ $news = get_news_file_as_object();
             <div class="panel three">
                 <a class="image-panel-href" href="/">
                     <img src="
-                    <?php echo $news['news'][1]['imgurl'];
+                    <?php echo $news[1]['imgurl'];
                     ?>">
                     <div class="image-panel-text-wrapper small-image-panel-text-wrapper">
-                        <a class="image-panel-tag" href="/"><?php echo $news['news'][1]['title']; ?></a>
+                        <a class="image-panel-tag" href="/"><?php echo $news[1]['title']; ?></a>
 
                         <a href="/">
                             <div class="image-panel-hover" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()">
@@ -173,7 +175,7 @@ $news = get_news_file_as_object();
                                 </div>
                                 <div id="image-panel-hover-description" style="display: none">
                                     <?php
-                                    echo $news['news'][1]['content'];
+                                    echo $news[1]['content'];
                                     ?>
                                 </div>
                             </div>
@@ -185,14 +187,14 @@ $news = get_news_file_as_object();
 
             <div class="four panel">
                 <div class="four-left panel">
-                    <img src="<?php echo $news['news'][2]['imgurl'];?>">
+                    <img src="<?php echo $news[2]['imgurl'];?>">
                 </div>
                 <div class="four-right">
                     <div class="four-right-content">
-                        <h1><?php echo $news['news'][2]['title']; ?></h1>
+                        <h1><?php echo $news[2]['title']; ?></h1>
                         <p><!-- Red rover, red rover, send a name for Mars 2020 right over! NASA is recruiting help from
                             students nationwide to find a name for its next Mars rover mission.-->
-                            <?php echo $news['news'][2]['content']; ?>
+                            <?php echo $news[2]['content']; ?>
                         </p>
                     </div>
                 </div>
