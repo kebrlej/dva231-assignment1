@@ -9,7 +9,7 @@
 
 <div id="search-form">
     <form id="search-bar">
-        <input type="text" name="Search" placeholder="Search">
+        <input oninput="sendAjaxRequest(this.value)" type="text" name="Search" placeholder="Search">
         <button type="button" onclick="sendAjaxRequest()">Get Data</button>
     </form>
 </div>

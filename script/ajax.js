@@ -1,13 +1,29 @@
+function createListNode(articleArray) {
+    var listNode = document.createElement("UL"); // Create a <li> node
 
-function sendAjaxRequest() {
+    articleArray.forEach(function (article) {
+        var listItemNode = document.createElement("LI")
+        listItemNode.innerText = article['title'];
+        listNode.appendChild(listItemNode);    // Append the text to <li>
+    });
+
+    return listNode;
+}
+
+
+function sendAjaxRequest(searchphrase) {
+
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        // if (this.readyState == 4 && this.status == 200) {
-        //     document.getElementById("demo").innerHTML =
-        //         this.responseText;
-        // }
-        document.getElementById("ajaxResponse").innerText=this.responseText;
+    xhttp.onload = function () {
+        let div = document.getElementById("ajaxResponse");
+        let articleArray = JSON.parse(this.responseText);
+        let listNode = createListNode(articleArray);
+        div.appendChild(listNode);
+
     };
-    xhttp.open("GET", "https://api.chucknorris.io/jokes/random", true);
+    xhttp
+        .open("GET"
+            , "http://localhost//assignment2/php/test_file.php/?user_searchphrase=" + searchphrase
+            , true);
     xhttp.send();
 }
