@@ -1,5 +1,4 @@
 <?php
-require("file_reader.php");
-$news = get_json();
-echo $news['news'][0]['title'];
-
+require "database_article_provider.php";
+$newArticle = get_three_newest_articles();
+echo json_encode($newArticle);

@@ -6,7 +6,8 @@ function sendAjaxRequest() {
         //     document.getElementById("demo").innerHTML =
         //         this.responseText;
         // }
+        document.getElementById("ajaxResponse").innerText=this.responseText;
     };
-    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.open("GET", "https://api.chucknorris.io/jokes/random", true);
     xhttp.send();
 }
