@@ -301,6 +301,18 @@ img {
     border: none;
 }
 
+#search-hint{
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    min-width: 248px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#search-hint a{
+    display: inline-block;
+}
 
 .dropdown-content {
     display: none;

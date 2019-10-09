@@ -1,9 +1,10 @@
 function createListNode(articleArray) {
-    var listNode = document.createElement("UL"); // Create a <li> node
+    var listNode = document.createElement("div"); // Create a <li> node
 
     articleArray.forEach(function (article) {
-        var listItemNode = document.createElement("LI")
-        listItemNode.innerText = article['title'];
+        var listItemNode = document.createElement("a");
+        listItemNode.href="#";
+        listItemNode.innerText = article['title'].substring(0,38);
         listNode.appendChild(listItemNode);    // Append the text to <li>
     });
 
@@ -24,14 +25,16 @@ function clearLastSearchResultsIfNecessary(div) {
 }
 
 function onSearchResultsLoad() {
-    let div = document.getElementById("ajaxResponse");
-    clearLastSearchResultsIfNecessary(div);
+    let searchHint = document.getElementById("search-hint");
+    clearLastSearchResultsIfNecessary(searchHint);
 
     let articles = JSON.parse(this.responseText);
     if (articles === undefined || articles.length == 0) {
+        searchHint.style.display="none";
         return;
     } else {
-        createArticleNodes(articles, div);
+        searchHint.style.display="inline-block";
+        createArticleNodes(articles, searchHint);
     }
 }
 

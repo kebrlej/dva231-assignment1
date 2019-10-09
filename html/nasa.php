@@ -15,6 +15,7 @@ $news = get_three_newest_articles();
     <link rel="icon" type="image/png" href="../img/nasa-logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <script src="../script/scripts.js"></script>
+    <script src="../script/ajax.js"></script>
 </head>
 <body>
 
@@ -54,7 +55,9 @@ $news = get_three_newest_articles();
             </a>
             <div id="search-form">
                 <form id="search-bar">
-                    <input type="text" name="Search" placeholder="Search">
+                    <input oninput="sendAjaxRequest(this.value)" type="text" name="Search" placeholder="Search"></form>
+                    <div id="search-hint">
+                    </div>
                 </form>
             </div>
 
@@ -187,7 +190,7 @@ $news = get_three_newest_articles();
 
             <div class="four panel">
                 <div class="four-left panel">
-                    <img src="<?php echo $news[2]['imgurl'];?>">
+                    <img src="<?php echo $news[2]['imgurl']; ?>">
                 </div>
                 <div class="four-right">
                     <div class="four-right-content">
@@ -217,7 +220,7 @@ $news = get_three_newest_articles();
 
     </div>
     <div class="admin_login">
-        <a class ="login-button" href="admin_login.php">Log in as administrator</a>
+        <a class="login-button" href="admin_login.php">Log in as administrator</a>
     </div>
 </div>
 
