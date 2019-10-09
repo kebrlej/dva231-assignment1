@@ -11,19 +11,37 @@ function createListNode(articleArray) {
 }
 
 
+function createArticleNodes(articleArray, div) {
+    let listNode = createListNode(articleArray);
+
+    div.appendChild(listNode);
+}
+
+function clearLastSearchResultsIfNecessary(div) {
+    if (div.lastElementChild !== null) {
+        div.removeChild(div.lastElementChild);
+    }
+}
+
+function onSearchResultsLoad() {
+    let div = document.getElementById("ajaxResponse");
+    clearLastSearchResultsIfNecessary(div);
+
+    let articles = JSON.parse(this.responseText);
+    if (articles === undefined || articles.length == 0) {
+        return;
+    } else {
+        createArticleNodes(articles, div);
+    }
+}
+
 function sendAjaxRequest(searchphrase) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onload = onSearchResultsLoad;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-        let div = document.getElementById("ajaxResponse");
-        let articleArray = JSON.parse(this.responseText);
-        let listNode = createListNode(articleArray);
-        div.appendChild(listNode);
-
-    };
     xhttp
         .open("GET"
-            , "http://localhost//assignment2/php/test_file.php/?user_searchphrase=" + searchphrase
+            , "http://localhost//assignment2/php/search_articles.php/?searchphrase=" + searchphrase
             , true);
     xhttp.send();
 }

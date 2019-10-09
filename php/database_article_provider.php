@@ -15,9 +15,16 @@ function get_three_newest_articles()
     return $articles;
 }
 
+function get_article_by_id($articleId){
+    $db = new mysqli("localhost", "root", "", "assignment3");
+    $query = "SELECT * FROM news_article WHERE idnews_article='{$articleId}'";
+    $result = $db->query($query);
+    return $result->fetch_assoc();
+}
+
 function search_article_by_title($searchedPhrase){
     $db = new mysqli("localhost", "root", "", "assignment3");
-    $query = "SELECT * FROM news_article WHERE 'title' LIKE '%{$searchedPhrase}%' LIMIT 5";
+    $query = "SELECT * FROM news_article WHERE title LIKE '%{$searchedPhrase}%' LIMIT 5";
     $result = $db->query($query);
     $articles = [];
     while($row = $result->fetch_assoc()) {
