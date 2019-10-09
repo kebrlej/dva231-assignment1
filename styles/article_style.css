@@ -1,0 +1,19 @@
+body
+{
+    background-color: black;
+    font-family: "Titillium Web", sans-serif;
+}
+.content
+{
+    width: 40em;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    font-size: 30px;
+    color: black;
+    display: block;
+    text-align: left;
+}
+h1
+{
+    color: #428bca;
+}
