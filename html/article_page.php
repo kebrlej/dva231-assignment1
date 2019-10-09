@@ -1,7 +1,7 @@
 <?php
 require "../php/database_article_provider.php";
 
-$article = get_article_by_id(1);
+$article = get_article_by_id($_GET['articleId']);
 ?>
 
 <!DOCTYPE html>

@@ -3,7 +3,7 @@ function createListNode(articleArray) {
 
     articleArray.forEach(function (article) {
         var listItemNode = document.createElement("a");
-        listItemNode.href="#";
+        listItemNode.href="http://localhost//assignment2/html/article_page.php/?articleId="+article["idnews_article"];
         listItemNode.innerText = article['title'].substring(0,38);
         listNode.appendChild(listItemNode);    // Append the text to <li>
     });
